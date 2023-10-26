@@ -54,17 +54,17 @@ export default function Catalogue() {
                 <p>THE 911 SYMBOLIZES AUTOMOTIVE EXCELLENCE, SEAMLESSLY BLENDING OPULENCE WITH UNMATCHED SPEED AND REMARKABLE EFFICIENCY, ALL ENCAPSULATED WITHIN THE FOUR WHEELS THAT CARRY ITS LEGACY.</p>
                 </div>
                 <div className={styles.column}>
-                    <p>PORSCHE IS RENOWNED FOR ITS BOLD AND DARING APPROACH TO THE AUTOMOBILE INDUSTRY, AND THE 911 IS IRREFUTABLE EVIDENCE OF THIS LEGACY. THIS ICONIC MODEL EMBODIES THE SPIRIT OF INNOVATION AND VISIONARY THINKING THAT PORSCHE HAS BEEN KNOWN FOR OVER THE DECADES. THE 911 IS NOT JUST A CAR; IT'S A CELEBRATION OF BRAVE DESIGN CHOICES, TECHNOLOGICAL ADVANCEMENTS, AND A COMMITMENT TO PUSHING THE BOUNDARIES OF WHAT'S POSSIBLE IN THE WORLD OF AUTOMOTIVES.</p>
+                    <p>PORSCHE IS RENOWNED FOR ITS BOLD AND DARING APPROACH TO THE AUTOMOBILE INDUSTRY, AND THE 911 IS IRREFUTABLE EVIDENCE OF THIS LEGACY. THIS ICONIC MODEL EMBODIES THE SPIRIT OF INNOVATION AND VISIONARY THINKING THAT PORSCHE HAS BEEN KNOWN FOR OVER THE DECADES. THE 911 IS NOT JUST A CAR; IT&apos;S A CELEBRATION OF BRAVE DESIGN CHOICES, TECHNOLOGICAL ADVANCEMENTS, AND A COMMITMENT TO PUSHING THE BOUNDARIES OF WHAT&apos;S POSSIBLE IN THE WORLD OF AUTOMOTIVES.</p>
                 </div>
             </div>
 
             <div className={styles.catalogueList}>
-    {catalogueItem.map((catalogue, index) => (
-        <div key={index} onMouseOver={() => setSelectedCatalogueItem(index)} className={styles.catalogueEl}>
-            <h2>{catalogue.title}</h2>
+                {catalogueItem.map((catalogue, index) => (
+                    <div key={index} onMouseOver={() => setSelectedCatalogueItem(index)} className={styles.catalogueEl}>
+                        <h2>{catalogue.title}</h2>
+                    </div>
+                ))}
+            </div>
         </div>
-    ))}
-    </div>
-</div>
     );
 }
