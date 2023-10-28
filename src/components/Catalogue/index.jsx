@@ -44,9 +44,9 @@ export default function Catalogue() {
             <div className={styles.catalogueItemDescription}>
                 <div ref={imageContainer} className={styles.imageContainer}>
                     <Image
-                        src={`/images/${catalogueItem[selectedCatalogueItem].src}`}
+                        src={`/911/${catalogueItem[selectedCatalogueItem].src}`}
                         layout="fill"
-                        alt="project image"
+                        alt="image"
                         priority={true}
                     />
                 </div>
